@@ -1,0 +1,13 @@
+1. Create a storage account with the name azuretutorterraform28 and azuretutorterraform29
+
+azuretutorterraform28 --> account needs to have 5 containers with own names
+azuretutorterraform29 --> account needs to have 6 containers with own names
+
+Pick the best-option to satisfy the above requirement.
+Make sure it is reusable
+
+2. Create a NSG with 5 security rules
+
+Rules to be enabled --> 80 / 443 / 8080 / 22 / 8081
+
+Make sure it is reusable
