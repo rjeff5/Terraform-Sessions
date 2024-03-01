@@ -11,3 +11,14 @@ Make sure it is reusable
 Rules to be enabled --> 80 / 443 / 8080 / 22 / 8081
 
 Make sure it is reusable
+
+3. Create two tfvars files (dev.tfvars /uat.tfvars)
+
+If it is dev environment I need to create the App service plan with F1 tier 
+If it is uat environment I need to create the app service plan with B1 tier
+
+Create the tags based on the environment.
+
+Code must be reusable and implement conditional parameters
+
+Once this created create an appservice for both dev and uat and apply lifecycle ignore changes for tags / app settings
