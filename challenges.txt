@@ -22,3 +22,19 @@ Create the tags based on the environment.
 Code must be reusable and implement conditional parameters
 
 Once this created create an appservice for both dev and uat and apply lifecycle ignore changes for tags / app settings
+
+
+4. Create a Resource Group / Storage account - Containers / App service plan / App service 
+
+Main.tf file should be dynamic and not static
+
+Create dev.tfvars / uat.tfvars / prod.tfvars
+Create workspace in the name of dev / qat / prod and try to execute each environment seperately so that we can have 3 rg created
+App service plan tier --> Free for dev and qa and B1 tier for prod
+Account replication type --> LRS for dev / GRS for qa / ZRS for prod
+DO NOT USE TERRAFORM.TFVARS for now
+Create a variable tf file and declare everything there --> NO values should be present
+In your terraform.tf file --> You have to point your state file to be created in a seperate storage account
+
+
+
