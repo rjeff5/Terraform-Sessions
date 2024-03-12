@@ -23,7 +23,14 @@ jobs:
           path: 'Conditional'  # Replace with the subdirectory where your Terraform code is located
           
       - name: Run Commands in Conditional directory
-        run: ls
+        run: |
+          cd Conditional
+          pwd
+          ls
+          # Add other commands here as needed
+          terraform init
+          terraform plan
+          terraform apply -auto-approve
         
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
