@@ -38,3 +38,4 @@ In your terraform.tf file --> You have to point your state file to be created in
 
 
 
+5. Create a git add commit and push the file
