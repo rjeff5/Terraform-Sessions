@@ -19,7 +19,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
-          repository: 'rjeff/terraform-sessions'  # Replace with your GitHub repository URL
+          repository: 'rjeff5/terraform-sessions'  # Replace with your GitHub repository URL
           path: 'Conditional'  # Replace with the subdirectory where your Terraform code is located
 
       - name: Setup Terraform
