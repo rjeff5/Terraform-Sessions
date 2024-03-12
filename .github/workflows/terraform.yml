@@ -24,14 +24,10 @@ jobs:
           
       - name: Run Commands in Conditional directory
         run: |
-          echo "Before cd: $(pwd)"
-          cd Conditional
-          ls
-          echo "After cd: $(pwd)"
-          ls
           terraform init
           terraform plan
           terraform apply -auto-approve
+        working-directory: ./Conditional
         
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
