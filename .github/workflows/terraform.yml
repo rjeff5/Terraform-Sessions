@@ -1,6 +1,6 @@
 # .github/workflows/terraform-ci-cd.yml
 
-name: Terraform CI/CD
+name: Deploy Terraform
 
 on:
   push:
