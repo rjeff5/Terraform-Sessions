@@ -19,20 +19,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
-          repository: 'rjeff5/terraform-sessions'  # Replace with your GitHub repository URL
+          repository: 'owner/repo'  # Replace with your GitHub repository URL
           path: 'Conditional'  # Replace with the subdirectory where your Terraform code is located
-          
+
       - name: Change to Conditional directory
-        run: cd Conditional
-        
+        run: |
+          cd Conditional
+          pwd
+          ls
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
       - name: Terraform Init
         run: terraform init
-
-      - name: Terraform Plan
-        run: terraform plan -input=false
-
-      - name: Terraform Apply
-        run: terraform apply -auto-approve -input=false
