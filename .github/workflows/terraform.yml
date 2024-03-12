@@ -24,10 +24,11 @@ jobs:
           
       - name: Run Commands in Conditional directory
         run: |
+          echo "Before cd: $(pwd)"
           cd Conditional
-          pwd
           ls
-          # Add other commands here as needed
+          echo "After cd: $(pwd)"
+          ls
           terraform init
           terraform plan
           terraform apply -auto-approve
