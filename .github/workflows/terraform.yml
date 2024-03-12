@@ -21,7 +21,10 @@ jobs:
         with:
           repository: 'rjeff5/terraform-sessions'  # Replace with your GitHub repository URL
           path: 'Conditional'  # Replace with the subdirectory where your Terraform code is located
-
+          
+      - name: Change to Conditional directory
+        run: cd Conditional
+        
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
