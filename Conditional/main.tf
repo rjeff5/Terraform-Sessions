@@ -15,7 +15,7 @@ variable "environment" {
 
 resource "azurerm_storage_account" "example" {
   count                   = var.create_storage_account ? 1 : 0
-  name                    = "mystorageaccount"
+  name                    = "jeffathir14032024test"
   resource_group_name     = azurerm_resource_group.example.name
   location                = azurerm_resource_group.example.location
   account_tier            = "Standard"
