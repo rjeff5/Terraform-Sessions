@@ -4,8 +4,6 @@ name: 'Terraform Module'
 on:
   push:
     branches: [ "main" ]
-    paths:
-    - './modulerg'
 
 permissions:
   contents: read
