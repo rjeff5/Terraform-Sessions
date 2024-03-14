@@ -47,6 +47,8 @@ name: 'Terraform Infra'
 on:
   push:
     branches: [ "main" ]
+    paths:
+    - './Conditional'
 
 permissions:
   contents: read
