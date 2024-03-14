@@ -8,3 +8,5 @@ module "my_resource_group" {
   resource_group_name = "storage-foreach"
   location            = "East US"
 }
+
+#Execute
